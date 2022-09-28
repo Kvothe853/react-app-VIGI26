@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
+body {
+  min-width: 520px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.container-info {
+  padding: 0 16px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+}
+
+.cards-container {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 16px;
+  width: calc(100% / 3 - 32px);
+  border: solid 1px #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: none;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: calc(100% / 2 - 32px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin: 16px 48px;
+    width: 100%;
+  }
+}

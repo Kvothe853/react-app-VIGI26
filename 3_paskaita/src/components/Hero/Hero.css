@@ -1,0 +1,15 @@
+.hero-wrapper {
+  background-color: cornflowerblue;
+  padding: 50px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}

@@ -1,0 +1,27 @@
+section .btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+}
+
+.btn.text {
+  color: #1875d1;
+  border: none;
+  background: #fff;
+  border: solid 2px #fff;
+}
+
+.btn.contained {
+  color: #fff;
+  background-color: #1875d1;
+  border: solid 2px #fff;
+}
+
+.btn.outlined {
+  color: #1875d1;
+  border: solid 2px #1875d156;
+  background-color: #fff;
+}

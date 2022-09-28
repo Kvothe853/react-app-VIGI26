@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+}
+
+section {
+  max-width: fit-content;
+  border: solid 1px #ddd;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.avatar,
+section button {
+  margin: 5px;
+}
+
+section button:active {
+  transform: scale(0.98);
+}

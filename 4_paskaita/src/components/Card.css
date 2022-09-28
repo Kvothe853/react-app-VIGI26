@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: calc(100% / 4 - 15px);
+  border: solid 1px darkgray;
+  padding: 16px;
+}
+
+.price {
+  color: red;
+}
+
+button {
+  margin-top: 16px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px darkgray;
+  border-radius: 5px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
