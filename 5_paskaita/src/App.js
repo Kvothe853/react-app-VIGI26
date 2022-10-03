@@ -18,6 +18,17 @@ function App() {
     setTodos((prevTodos) => prevTodos.filter((prevTodo) => prevTodo !== todo));
   };
 
+  useEffect(() => {
+    if (todos.length !== 0) {
+      localStorage.setItem("todos", JSON.stringify(todos));
+    }
+  }, [todos]);
+
+  useEffect(() => {
+    let todos = JSON.parse(localStorage.getItem("todos"));
+    setTodos(todos);
+  }, []);
+
   return (
     <div className="todo-container">
       <h3>You have {todos.length} Todos</h3>
