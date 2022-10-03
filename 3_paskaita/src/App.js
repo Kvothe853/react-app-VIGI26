@@ -29,7 +29,7 @@ function App() {
   const colours = ["red", "green", "blue", "yellow"];
   return (
     <div>
-      {/* <section>
+      <section>
         <Avatar bgColor={"cornflowerblue"}>Airidas</Avatar>
         <Avatar>Haroldas</Avatar>
       </section>
@@ -47,13 +47,13 @@ function App() {
       <section>
         <CustomButton>Outlined</CustomButton>
         <CustomButton variant={"contained"}>Contained</CustomButton>
-      </section> */}
+      </section>
       <section>
         <CustomButton>Airidas</CustomButton>
         <CustomButton>Tomas</CustomButton>
         <CustomButton>Vytautas</CustomButton>
       </section>
-      <section>
+      {/* <section>
         {names.map((name) => (
           <CustomButton>{name}</CustomButton>
         ))}
@@ -90,7 +90,7 @@ function App() {
         {colours.map((color) => (
           <Button variant={"contained"}>{color}</Button>
         ))}
-      </section>
+      </section> */}
     </div>
   );
 }

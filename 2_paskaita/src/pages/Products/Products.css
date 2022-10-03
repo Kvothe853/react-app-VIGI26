@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.border {
+  border: solid 1px #ddd;
+  max-width: fit-content;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.weekdays {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border: solid 1px #ddd;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.weekday {
+  background-color: #eee;
+  margin: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.weekday.active {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.todo-list {
+  margin: 5px;
+  padding: 20px;
+  border: solid 1px #ddd;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+.todo-list li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list li span {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.todo-list li span:hover {
+  color: #c70000;
+}
+
+.todo-list input,
+.todo-list button,
+.siblings-btns button,
+.counter-btns button,
+.randomNumber-container button,
+.bars-btns button {
+  padding: 6px 12px;
+  border: solid 1px #ddd;
+}
+
+.todo-list input:focus {
+  outline: none;
+}
+
+.todo-list button {
+  border-left: none;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.todo-list button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #ddd;
+}
+
+.todo-list ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.siblings-container {
+  padding: 20px;
+  margin: 5px;
+}
+
+.siblings-btns {
+  margin-top: 20px;
+}
+.siblings-btns button {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.siblings-btns button:active,
+.counter-btns button:active,
+.randomNumber-container button:active,
+.bars-btns button:active {
+  transform: scale(0.98);
+}
+
+.siblings-btns button:hover,
+.counter-btns button:hover,
+.randomNumber-container button:hover,
+.bars-btns button:hover {
+  background-color: #ddd;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-container h2 {
+  margin-bottom: 20px;
+}
+
+.counter-btns button {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.randomNumber-container h2 {
+  margin-bottom: 20px;
+}
+
+.randomNumber-container button {
+  cursor: pointer;
+}
+
+.bars-btns {
+  margin-top: 20px;
+}
+
+.bars-btns button {
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bar-box {
+  height: 80px;
+  background-color: green;
+}
+
+button {
+  user-select: none;
+}

@@ -7,7 +7,9 @@ const Card = (props) => {
       <img src={props.url} alt={props.title} />
       <p className="title">{props.title}</p>
       <h2 className="price">{props.price}</h2>
-      <button type="submit">Istrinti</button>
+      <button type="submit" onClick={props.func}>
+        Istrinti
+      </button>
     </div>
   );
 };
