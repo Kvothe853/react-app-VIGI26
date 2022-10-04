@@ -4,14 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../public/pattern.png");
+
+  /* background-size: contain; */
+}
+
 .todo-container {
-  max-width: 300px;
+  width: 400px;
+  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 8px;
-  border: solid 1px #ddd;
-  border-bottom: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .todos {
@@ -22,14 +35,41 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 14px;
 }
 
 input {
   flex: 3;
+  border: solid 1px #ddd;
+}
+
+input:focus {
+  outline: none;
 }
 
 form button {
   flex: 1;
   margin-left: 5px;
+  border: solid 1px #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+form button:hover {
+  transition: all 0.25s ease;
+  background-color: #ddd;
+}
+
+h3 {
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  color: #444;
+  border-bottom: solid 1px #ddd;
+}
+
+form button,
+form input {
+  padding: 6px;
 }

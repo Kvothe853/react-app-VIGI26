@@ -1,0 +1,17 @@
+.nav-bar {
+  border-bottom: solid 1px #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+  transition: all 0.2s ease-out;
+}
+
+.nav-bar a:hover {
+  background-color: #eee;
+}

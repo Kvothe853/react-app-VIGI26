@@ -1,6 +1,21 @@
 .todo {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 8px 14px;
   border-bottom: solid 1px #ddd;
+}
+
+.todo button {
+  width: 20px;
+  border-radius: 50%;
+  border: solid 1px #ddd;
+  color: #fff;
+  background-color: #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.todo button:hover {
+  transition: all 0.25s ease;
+  background-color: #333;
 }

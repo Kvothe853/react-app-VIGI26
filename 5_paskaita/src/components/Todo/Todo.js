@@ -4,7 +4,7 @@ const Todo = (props) => {
   return (
     <div className="todo">
       <div>{props.children}</div>
-      <button onClick={props.deleteTodo}>Delete</button>
+      <button onClick={props.deleteTodo}>&#10006;</button>
     </div>
   );
 };
