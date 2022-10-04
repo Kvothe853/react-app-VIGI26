@@ -17,7 +17,7 @@ const Home = () => {
       .then((response) => setOrders(response))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
-  }, []);
+  }, [orders]);
 
   const createConfirmModal = (e) => {
     setModalClass("active");
