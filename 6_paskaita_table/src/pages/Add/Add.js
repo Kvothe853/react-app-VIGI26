@@ -10,13 +10,13 @@ const Add = () => {
   const handlerAddOrder = (e) => {
     e.preventDefault();
     if (peopleCount && price) {
-      pushOrder({ people: peopleCount, price: price });
+      addOrder({ people: peopleCount, price: price });
       setPeopleCount("");
       setPrice("");
     }
   };
 
-  const pushOrder = (order) => {
+  const addOrder = (order) => {
     console.log(order);
     const option = {
       method: "POST",

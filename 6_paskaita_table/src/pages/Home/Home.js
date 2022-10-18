@@ -4,6 +4,7 @@ import Table from "../../components/Table/Table";
 import Modal from "../../components/Modal/Modal";
 import { ThreeDots } from "react-loader-spinner";
 import { useState, useEffect } from "react";
+import Breathe from "../../components/Breathe/Breathe";
 
 const Home = () => {
   const [orders, setOrders] = useState([]);
@@ -14,7 +15,10 @@ const Home = () => {
   useEffect(() => {
     fetch("https://believed-shore-vanadium.glitch.me/")
       .then((resp) => resp.json())
-      .then((response) => setOrders(response))
+      .then((response) => {
+        setOrders(response);
+        console.log("hello");
+      })
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
   }, [orders]);
@@ -67,6 +71,7 @@ const Home = () => {
           id={currentId}
         />
       </div>
+      <Breathe />
     </div>
   );
 };
